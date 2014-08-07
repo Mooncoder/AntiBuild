@@ -1,0 +1,20 @@
+name: AntiBuild
+version: 1.0.0
+api: [1.2.0]
+author: MinetoxDev Team
+description: Prevents to use custom items
+main: Antibuild\AntiBuild
+
+commands:
+ banitem:
+  permission: antibuild.commands.banitem
+  description: Prevents players to use custom items
+  
+permissions:
+ antibuild:
+  default: op
+  description: "Top-Level Permissions of AntiBuild"
+  children:
+   antibuild.commands.item:
+    description: "Prevents to use custom items"
+    default: true
