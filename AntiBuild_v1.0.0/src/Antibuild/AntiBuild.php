@@ -22,7 +22,7 @@ class AntiBuild extends PluginBase implements Listener
 		if (!file_exists($this->getDataFolder()))
 		{
             @mkdir($this->getDataFolder(), true);
-        }
+                }
 		$this->getLogger()->info(MT::BLUE . "[MineTox]" . MT::AQUA . " AntiBuild" . MT::BLUE . " has been loaded!");
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->config = new Config($this->getDataFolder(). "config.yml", Config::YAML, array(
